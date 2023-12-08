@@ -32,7 +32,14 @@ import导入语句通常放在文件开头包声明语句的下面。
 包名是从$GOPATH/src/后开始计算的，使用/进行路径分隔。
 main包是一个程序的入口包，所以main函数所在的包建议定义为main包，如果不定义为main包，那么就不能得到可执行文件。
 		比如这样建立路径 - project/main/xxx.go (xxx.go 包含package main, func main)
-
+变量名字不要同下面的关键字或者预定义标识符
+关键字（保留字）：
+break, default, func, interface, select, case, defer, go, map, struct, chan, else, goto,
+package, switch, const, fallthrough, if, range, type, continue, for import return, var
+预定义标识符：
+append, bool, byte, cap, close, complex, complex64, complex128, uint16, copy,false,float32,
+float64, imag, int, int8, int16,uint32, int32, int64, iota, len, make,new, nil, panic, uint64, print,
+println, real, recover, string, true, uint, uint8, uintprt
 */
 
 func main3() {
