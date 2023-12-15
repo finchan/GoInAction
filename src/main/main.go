@@ -3,6 +3,7 @@ package main
 import (
 	cal "calcutils"
 	"fmt"
+	"function"
 	"utils" //	包路径，自src以下的通过/a/b/c到最终的文件夹
 )
 
@@ -16,10 +17,26 @@ import (
 7. 一个目录下的同级文件对应的包名必须相同
 8. 可以给包取别名，取别名后，原来的包名就不能使用了
 */
+//	下载main前后都行
+var num int = test()
+
+func test() int {
+	fmt.Println("test函数被执行")
+	return 10
+}
+
+func init() {
+	fmt.Println("init 函数被执行")
+}
 
 func main() {
 	fmt.Println("Main Methods - ")
 	fmt.Printf(util.StuName)
 	util.GetConn()
 	cal.Test()
+	fmt.Println("-------------------------------")
+	fmt.Println(util.Age)
+	function.Anonymous()
+	function.Closure()
+	fmt.Println(function.DeferTest(10, 20))
 }
