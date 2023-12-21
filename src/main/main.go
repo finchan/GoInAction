@@ -38,5 +38,8 @@ func main() {
 	fmt.Println(util.Age)
 	function.Anonymous()
 	function.Closure()
-	fmt.Println(function.DeferTest(10, 20))
+	//fmt.Println(function.DeferTest(10, 20))
+	function.StringFunctions()
+	function.DateTimeInvoked()
+	function.BuildinFunction()
 }
